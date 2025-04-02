@@ -1,0 +1,5 @@
+ToDOアプリ
+
+composerでeloquentをインストール済み。
+phpMyAdminでdbを作成してから接続する。
+memo_listsテーブルも作成。
