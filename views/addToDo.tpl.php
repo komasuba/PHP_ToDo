@@ -12,10 +12,10 @@
                     <a href="index.php"><button class="btn btn-primary" name="add" type="submit">一覧に戻る</button></a>
                 </div>
                 <div class="col">
-                  Column
+                  <!-- Column -->
                 </div>
                 <div class="col">
-                  Column
+                  <!-- Column -->
                 </div>
               </div>
             </div>
