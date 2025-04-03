@@ -28,6 +28,7 @@
                     <th>作成者</th>
                     <th>作成日時</th>
                     <th>編集</th>
+                    <th>削除</th>
                 </tr>
                 <tr>
                     <?php foreach ($memolists as $memolist) { ?>
@@ -37,6 +38,12 @@
                         <td><?= $memolist->content ?></td>
                         <td><?= $memolist->name ?></td>
                         <td><?= $memolist->created_at ?></td>
+                        <td>
+                          <form action="editToDo.php" method="get">
+                            <input type="hidden" name="id" value="<?= $memolist->id ?>">
+                            <button class="btn btn-primary" type="submit">編集</button>
+                          </form>
+                        </td>
                         <td>
                           <form action="deleteToDo.php" method="post" onsubmit="return confirm('本当に削除しますか？');">
                             <input type="hidden" name="id" value="<?= $memolist->id ?>">
