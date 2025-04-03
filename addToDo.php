@@ -13,7 +13,7 @@
         $todo->title = $title;
         $todo->content = $content;
         $todo->name = $name;
-        $todo->save(); // DBに保存！
+        $todo->save();
 
         require_once 'views/addToDo.tpl.php';
     }else{
